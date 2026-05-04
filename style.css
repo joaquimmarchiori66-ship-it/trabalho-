@@ -1,36 +1,13 @@
-/* Estilos personalizados para o portal de esportes */
-
-/* Efeito no cabeçalho principal */
-.hero-sports {
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
-                url('img/banner-esportes.jpg'); /* Caminho para sua foto local */
+.banner {
+    height: 300px;
+    background: url('https://via.placeholder.com/1200x400') no-repeat center;
     background-size: cover;
-    background-position: center;
-    color: white;
-    padding: 100px 0;
-    margin-bottom: 30px;
 }
 
-/* Ajuste das imagens das notícias */
-.card-img-top {
-    height: 200px;
-    object-fit: cover;
-}
-
-/* Efeito de hover nos cards */
 .card {
-    transition: transform 0.3s ease;
+    transition: 0.3s;
 }
 
 .card:hover {
-    transform: translateY(-5px);
-}
-
-/* Cores personalizadas */
-.bg-primary {
-    background-color: #0d47a1 !important; /* Azul mais forte e esportivo */
-}
-
-footer {
-    border-top: 4px solid #ffc107; /* Detalhe em amarelo no rodapé */
+    transform: scale(1.05);
 }
