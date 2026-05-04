@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SportNews - O Seu Portal de Esportes</title>
+    <!-- CSS do Bootstrap 5 -->
+    <link href="https://jsdelivr.net" rel="stylesheet">
+    <style>
+        .hero-sports {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://unsplash.com');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 0;
+        }
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Menu de Navegação -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">⚽ SPORT<span class="text-warning">NEWS</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Futebol</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Basquete</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Tênis</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Cabeçalho Principal (Hero) -->
+    <header class="hero-sports text-center">
+        <div class="container">
+            <h1 class="display-3 fw-bold">Tudo sobre o mundo dos esportes</h1>
+            <p class="lead">Resultados, notícias e análises em tempo real.</p>
+            <a href="#noticias" class="btn btn-warning btn-lg fw-bold">Ver Últimas Notícias</a>
+        </div>
+    </header>
+
+    <!-- Seção de Notícias (Cards Responsivos) -->
+    <main class="container my-5" id="noticias">
+        <h2 class="text-center mb-4">Destaques do Dia</h2>
+        <div class="row g-4">
+            <!-- Card 1 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://unsplash.com" class="card-img-top" alt="Futebol">
+                    <div class="card-body">
+                        <span class="badge bg-success mb-2">Futebol</span>
+                        <h5 class="card-title">Final da Champions League</h5>
+                        <p class="card-text">Confira as prováveis escalações e onde assistir ao jogão de hoje.</p>
+                        <a href="#" class="btn btn-outline-primary btn-sm">Ler mais</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://unsplash.com" class="card-img-top" alt="Basquete">
+                    <div class="card-body">
+                        <span class="badge bg-orange mb-2" style="background-color: #fd7e14;">Basquete</span>
+                        <h5 class="card-title">Playoffs da NBA</h5>
+                        <p class="card-text">Os melhores momentos das partidas da noite passada e a corrida pelo título.</p>
+                        <a href="#" class="btn btn-outline-primary btn-sm">Ler mais</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://unsplash.com" class="card-img-top" alt="Tênis">
+                    <div class="card-body">
+                        <span class="badge bg-info text-dark mb-2">Tênis</span>
+                        <h5 class="card-title">Torneio de Roland Garros</h5>
+                        <p class="card-text">Favoritos avançam na primeira rodada do Grand Slam de saibro.</p>
+                        <a href="#" class="btn btn-outline-primary btn-sm">Ler mais</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <div class="container">
+            <p class="mb-1">© 2026 SportNews - Entrega Parcial de Projeto</p>
+            <small>Desenvolvido com Bootstrap para fins acadêmicos.</small>
+        </div>
+    </footer>
+
+    <!-- Scripts do Bootstrap -->
+    <script src="https://jsdelivr.net"></script>
+</body>
+<link rel="stylesheet" href="style.css">
+</html>
